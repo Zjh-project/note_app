@@ -49,6 +49,7 @@ ipcRenderer.on('action', (event, arg) => {
 function newFile() {
     document.title = '新建文档.txt';
     txtEditor.value = '';
+    currentFile = null;
     isSave = true;
 }
 function openFile() {
